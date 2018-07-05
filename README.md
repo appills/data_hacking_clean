@@ -8,6 +8,38 @@ So hacking here means we want to quickly deconstruct data, understand what we've
 
 The primary motivation for these exercises is to explore the nexus of IPython, Pandas and Scikit Learn on security data of various kinds. The exercises will often intentionally show common missteps, warts in the data, paths that didn't work out that well and results that could definitely be improved upon. In general we're trying to capture what worked and what didn't, not only is that more realistic but often much more informative to the reader. :)
 
+(here's a quick way to get up and running)
+##### Download and install **Miniconda** (just Anaconda Prompt and minimal packages)
+
+\1. Obtain your miniconda version at https://repo.continuum.io/miniconda/
+
+    Miniconda2 = python2 | Miniconda3 = python3
+    
+    Python3 Miniconda for 64-bit Windows 10:
+    
+    Miniconda3-4.5.4-Windows-x86_64.exe
+
+\2. You can verify the checksum with Git Bash:
+`md5sum /path/to/file/anaconda-file-name-here.exe`
+
+\3. After installation, open Anaconda Prompt and run the following:
+
+`conda create --name dga`
+
+`conda activate dga`
+
+`conda install pandas`
+
+`conda install scikit-learn`
+
+`conda install -c conda-forge tldextract`
+
+`conda install jupyter`
+
+\4. After the libraries are downloaded, run the following command to start the Jupyter Notebook interface:
+
+`jupyter notebook`
+
 #### Python Modules Used:
 - [IPython](http://ipython.org): Architecture for interactive computing and presentation
 - [Pandas](http://pandas.pydata.org): Python Data Analysis Library
